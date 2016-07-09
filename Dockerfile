@@ -8,9 +8,7 @@ RUN \
 	mkdir -p /root/tmp &&\
 	cd /root/tmp/ &&\
 	wget 'https://web.archive.org/web/20060711133409/http://www.pdflib.com/products/pdflib/download/603src/PDFlib-Lite-6.0.3.tar.gz' &&\
-	wget 'https://pecl.php.net/get/pdflib-2.1.7.tgz'
-RUN \
-	set -x &&\
+	wget 'https://pecl.php.net/get/pdflib-2.1.7.tgz' &&\
 	cd /root/tmp/ &&\
 	tar xfz PDFlib-Lite-6.0.3.tar.gz &&\
 	cd PDFlib-Lite-6.0.3 &&\
