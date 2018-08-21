@@ -23,6 +23,7 @@ RUN \
 	./configure &&\
 	make &&\
 	make install &&\
+	ldconfig /usr/local/lib &&\
 	cd /root/ &&\
 	rm -fr tmp &&\
 	echo 'extension=pdf.so' >/etc/php.d/libpdf.ini
